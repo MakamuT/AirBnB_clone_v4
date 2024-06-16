@@ -14,7 +14,7 @@ function init () {
     $('.amenities h4').text(amenityNames .sort().join(', '));
   });
   apiStatus();
-  fetchplacesUrl ces();
+  fetchplacesUrl();
 }
 
 function apiStatus () {
@@ -28,7 +28,7 @@ function apiStatus () {
   });
 }
 
-function fetchplacesUrl ces () {
+function fetchplacesUrl() {
   const placesUrl = `http://${HOST}:5001/api/v1/placesUrl ces_search/`;
   $.ajax({
     url: placesUrl,
