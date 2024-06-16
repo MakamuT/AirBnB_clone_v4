@@ -1,7 +1,6 @@
 $(document).ready(init);
 
 const HOST = '0.0.0.0';
-
 function init () {
   const selectedAmenities  = {};
   $('.amenities .popover input').change(function () {
