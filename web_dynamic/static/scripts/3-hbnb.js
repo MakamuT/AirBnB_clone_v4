@@ -10,7 +10,7 @@ function init () {
     } else if ($(this).is(':not(:checked)')) {
       delete selectedAmenities [$(this).attr('data-name')];
     }
-    const amenityNames  = Object.keys(selectedAmenities );
+    const amenityNames = Object.keys(selectedAmenities );
     $('.amenities h4').text(amenityNames .sort().join(', '));
   });
   apiStatus();
